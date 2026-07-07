@@ -43,13 +43,13 @@ The goal isn't to rank them. It's to show that the same metric — margin, growt
 
 **Average profit margin, 2009–2022:**
 
-![Profit Margin Ranking](assets/01-profit-margin-ranking.png)
+<img src="assets/01-profit-margin-ranking.png" alt="Profit Margin Ranking" width="700">
 
 McDonald's (22.7%) and Apple (22.5%) lead. AIG (4.7%) and Amazon (2.4%) sit in the middle. PG&E (-1.5%) and Sears (-3.5%) are negative.
 
 **Growth against margin:**
 
-![Growth vs Margin](assets/02-growth-vs-margin.png)
+<img src="assets/02-growth-vs-margin.png" alt="Growth vs Margin" width="700">
 
 Amazon has the highest average revenue growth in the group (26.7%/yr) paired with one of the lowest margins. McDonald's is the opposite: the best margin, almost no growth (0.5%/yr).
 
@@ -59,7 +59,7 @@ These two charts are a snapshot. They don't say how each company got here, or wh
 
 ## Section 2: Growth Trajectories, 2009–2022
 
-![Revenue Growth Index](assets/03-revenue-growth-index.png)
+<img src="assets/03-revenue-growth-index.png" alt="Revenue Growth Index" width="700">
 
 Indexing each company's revenue to its own starting year (2009 = 100) separates four distinct trajectories:
 
@@ -75,7 +75,7 @@ The shape of decline matters. PG&E's dip is a V. Sears' is a straight line down.
 
 ## Finding 1: PG&E — When a Bad Number Isn't What It Looks Like
 
-![Cash Flow vs Net Income Signal](assets/04-pge-cash-flow-vs-net-income.png)
+<img src="assets/04-pge-cash-flow-vs-net-income.png" alt="Cash Flow vs Net Income Signal" width="700">
 
 PG&E's cash-flow-to-net-income ratio is **-8.17** — the only negative number in the group, and by a wide margin. On its own, this reads as a company burning cash while losing money.
 
@@ -123,7 +123,7 @@ A rising, profitable company shouldn't see its equity collapse. The dataset has 
 
 Share count fell 33% over 14 years. More importantly, the pace lines up with the equity collapse: shares fell fastest (-14.4%, then -11.2%) in 2013–2019, exactly when equity crashed from +16,010 to -8,210. Once equity leveled off after 2019, the pace of share reduction slowed to -3.0%. The timing match is the evidence — this isn't a coincidence of two unrelated numbers moving down at the same time.
 
-![Implied Shares vs Shareholder Equity](assets/09-mcd-shares-vs-equity.png)
+<img src="assets/09-mcd-shares-vs-equity.png" alt="Implied Shares vs Shareholder Equity" width="700">
 
 Apple shows the same mechanism earlier in its lifecycle: shareholder equity fell from 134,047 (2017) to 50,672 (2022) while net income hit an all-time high. Same direction, different stage.
 
@@ -136,7 +136,7 @@ Apple shows the same mechanism earlier in its lifecycle: shareholder equity fell
 | 2017 | -2,221 | -3,824 |
 | 2018 | -383 | -3,723 |
 
-![MCD vs Sears Equity](assets/05-mcd-sears-equity.png)
+<img src="assets/05-mcd-sears-equity.png" alt="MCD vs Sears Equity" width="700">
 
 One company had money to spare and retired its own stock. The other ran out of money it needed.
 
@@ -151,11 +151,11 @@ The same check applied to McDonald's rules out buybacks as Sears' explanation. S
 
 Share count stayed flat within half a million shares while equity fell from +9,699 to -3,723. If Sears' equity had collapsed the way McDonald's did, share count would have fallen too. It didn't — which confirms the decline came from losses, not from any deliberate return of capital.
 
-![Sears Implied Shares vs Equity](assets/10-sears-shares-vs-equity.png)
+<img src="assets/10-sears-shares-vs-equity.png" alt="Sears Implied Shares vs Equity" width="700">
 
 **Three metrics failing at once (Sears)**
 
-![Sears Three-Line Index](assets/06-sears-three-line-index.png)
+<img src="assets/06-sears-three-line-index.png" alt="Sears Three-Line Index" width="700">
 
 Indexed to 2009 = 100, three independent measures — revenue, gross margin, and current ratio — all decline together:
 
@@ -167,7 +167,7 @@ None of these three had to move together. That they did is the real finding.
 
 **Why they moved together**
 
-![Sears Death Spiral](assets/07-sears-death-spiral.png)
+<img src="assets/07-sears-death-spiral.png" alt="Sears Death Spiral" width="700">
 
 The three metrics reinforce each other in a loop: thinner margins left less cash to reinvest in stores and inventory, which drove customers away, which further eroded margin. Each stage's CAGR is shown above — inventory and staffing (-12.2%/yr) declined fastest, revenue (-10.8%/yr) close behind.
 
@@ -179,7 +179,7 @@ This is also what separates Sears from PG&E. Both show a delay between when a nu
 
 ## Finding 3: AIG — Profit Swings the Business Didn't Cause
 
-![AIG EBITDA vs Net Income](assets/08-aig-ebitda-vs-net-income.png)
+<img src="assets/08-aig-ebitda-vs-net-income.png" alt="AIG EBITDA vs Net Income" width="700">
 
 AIG went from the single worst year in this dataset (-12,244 net income, 2009) to one of the best (+19,810, 2011) in two years. It never fully settled after that, swinging between profit and loss for the next decade.
 
@@ -223,3 +223,11 @@ Four different mechanisms, one shared lesson: the metric is a starting point for
 - **PG&E's 2019 Debt/Equity ratio reads as 0.00**, which is very likely a data artifact of Chapter 11 reclassification (debt becomes "liabilities subject to compromise" during bankruptcy) rather than an actual zero-debt year.
 - **The employee-productivity comparison (Finding 2, early drafts) uses each company's full-period average**, not a single shared year, because Sears and PG&E don't share a common "current" year with the rest of the group.
 - **McDonald's implied share count (Net Income ÷ EPS) assumes the dataset's EPS is basic, not diluted.** The two typically differ by a small margin; the 33% decline over 14 years is large enough that this doesn't change the conclusion, but the exact year-by-year figures carry that uncertainty.
+
+---
+
+## Data & Code
+
+- `data/financial_statements_cleaned.csv` — the cleaned dataset used throughout this report.
+- `scripts/derived_metrics.py` — every calculated figure in this report that isn't a raw column (CAGR, implied shares outstanding, indexed metrics, etc.), runnable end-to-end against the cleaned data.
+- `scripts/data_cleaning.py` — documents how the raw dataset was cleaned. Reconstructed from project notes, not tested against the original raw file (see script docstring).
