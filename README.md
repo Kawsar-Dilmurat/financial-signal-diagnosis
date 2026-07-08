@@ -139,7 +139,7 @@ McDonald's and Sears both show negative shareholder equity on their balance shee
 
 **McDonald's — profitable, shrinking on paper by choice:**
 
-Equity went negative in 2016 and stayed there, while net income kept climbing every year through 2022:
+Equity went negative in 2016 and stayed negative through 2022, even as net income stayed solidly profitable across the same years — including a new high in 2021:
 
 | Year | Net Income | Shareholder Equity |
 |---|---|---|
@@ -150,6 +150,11 @@ Equity went negative in 2016 and stayed there, while net income kept climbing ev
 | 2017 | 5,192 | -3,268 |
 | 2018 | 5,924 | -6,258 |
 | 2019 | 6,025 | -8,210 |
+| 2020 | 4,730 | -7,825 |
+| 2021 | 7,545 | -4,601 |
+| 2022 | 6,177 | -6,003 |
+
+Net income wasn't perfectly smooth — it dipped in 2020 (a pandemic year across the dataset) and again in 2022 relative to 2021's high — but it never came close to loss territory, while equity spent all seven of these years underwater. A company with a genuine operating problem doesn't usually keep posting profits like these.
 
 <details>
 <summary>See all 14 years</summary>
@@ -216,7 +221,7 @@ Equity went negative in 2015 — one year earlier than McDonald's — for the op
 <img src="assets/09-mcd-sears-shares-indexed.png" alt="Implied Shares Outstanding, indexed to 2009=100, McDonald's vs Sears">
 
 - **McDonald's:** share count fell 33% over 14 years — and the pace lines up with the equity collapse. Shares fell fastest (-14.4%, then -11.2%) in 2013–2019, exactly when equity crashed from +16,010 (2013) to -8,210 (2019) — both figures visible in the table above. Once equity leveled off after 2019, share reduction slowed to -3.0%. The timing match is the evidence — not a coincidence of two unrelated numbers moving down at the same time.
-- **Sears:** share count fell 15% by 2012, then stayed flat — within half a million shares — for the rest of the dataset, while equity kept falling from +9,699 (2009) to -3,723 (2018) — both figures visible in the table above. If Sears' equity had collapsed the way McDonald's did, share count would have kept falling too. It didn't. That confirms the decline came from losses, not from any deliberate return of capital.
+- **Sears:** share count fell 15% by 2012, then stayed flat — within half a million shares — for the rest of the dataset, while equity collapsed from +9,699 (2009) to -3,723 (2018) — both figures visible in the table above. If Sears' equity had collapsed the way McDonald's did, share count would have kept falling too. It didn't. That confirms the decline came from losses, not from any deliberate return of capital.
 
 **Three metrics failing at once (Sears):**
 
@@ -256,7 +261,7 @@ AIG's profit jumped nearly 10x in one year, but the number that tracks the core 
 | 2011 | 19,810 | 15,225 | -81 |
 
 <details>
-<summary>See all 14 years (the "swinging between profit and loss for the next decade" referenced below)</summary>
+<summary>See all 14 years (net income continuing to swing between profit and loss through 2022)</summary>
 
 | Year | Net Income | EBITDA | Cash Flow from Operating |
 |---|---|---|---|
@@ -277,7 +282,7 @@ AIG's profit jumped nearly 10x in one year, but the number that tracks the core 
 
 </details>
 
-- AIG went from the **single worst year in this dataset** (-12,244 net income, 2009) to one of the best (+19,810, 2011) in two years. It never fully settled after that, swinging between profit and loss for the next decade.
+- AIG went from the **single worst year in this dataset** (-12,244 net income, 2009) to one of the best (+19,810, 2011) in two years. It didn't stabilize after that either — the full 14-year breakdown above shows net income continuing to swing between profit and loss through 2022.
 - **EBITDA — a rough proxy for how the core business is actually performing — was *lower* in 2011 than the year before** (15,225 vs. 21,166). The underlying business hadn't improved. Yet net income jumped nearly tenfold.
 - **The cash flow number makes the disconnect impossible to miss:** in that same year, AIG's cash flow from operating activities was **-81** — essentially zero. AIG's books showed a $19,810 profit backed by almost no actual cash collected from running the business.
 
@@ -302,7 +307,7 @@ When net income moves opposite to EBITDA, and operating cash flow doesn't move a
 **How each company in this report resolved once traced through:**
 
 - **PG&E** — cash was consumed by a liability it didn't choose (wildfire settlement), recognized on paper a year before it hit cash.
-- **Sears** — cash was never there to begin with; losses ate through it every year, with no single event to point to.
+- **Sears** — cash was never there to begin with; losses ate through it every year from 2012 onward, with no single event to point to.
 - **McDonald's** — cash was returned to shareholders by choice, fast enough to run equity negative despite rising profit.
 - **AIG** — the profit itself wasn't backed by cash in the first place; a $19,810 gain in 2011 came with operating cash flow of -81.
 
