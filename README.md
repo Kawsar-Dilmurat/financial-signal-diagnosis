@@ -93,14 +93,10 @@ PG&E's account shows one year where it *owed* money (booked on paper, no cash mo
 
 | Year | Net Income | Cash Flow from Operating |
 |---|---|---|
-| 2009 | 1,220 | 3,039 |
-| … | … | … |
 | 2017 | 1,646 | 5,977 |
 | 2018 | -6,851 | 4,752 |
 | 2019 | -7,656 | 4,816 |
 | 2020 | -1,318 | -19,130 |
-| … | … | … |
-| 2022 | 1,800 | 3,721 |
 
 <details>
 <summary>See all 14 years (used to compute the -8.17 average)</summary>
@@ -147,16 +143,13 @@ Equity went negative in 2016 and stayed there, while net income kept climbing ev
 
 | Year | Net Income | Shareholder Equity |
 |---|---|---|
-| 2009 | 4,551 | 14,034 |
-| … | … | … |
 | 2013 | 5,586 | 16,010 |
 | 2014 | 4,758 | 12,853 |
-| … | … | … |
+| 2015 | 4,529 | 7,088 |
 | 2016 | 4,686 | -2,204 |
-| … | … | … |
+| 2017 | 5,192 | -3,268 |
+| 2018 | 5,924 | -6,258 |
 | 2019 | 6,025 | -8,210 |
-| … | … | … |
-| 2022 | 6,177 | -6,003 |
 
 <details>
 <summary>See all 14 years</summary>
@@ -192,9 +185,10 @@ Equity went negative in 2015 — one year earlier than McDonald's — for the op
 | 2009 | 53 | 9,699 |
 | … | … | … |
 | 2013 | -930 | 3,172 |
-| … | … | … |
+| 2014 | -1,365 | 2,183 |
 | 2015 | -1,682 | -945 |
-| … | … | … |
+| 2016 | -1,129 | -1,956 |
+| 2017 | -2,221 | -3,824 |
 | 2018 | -383 | -3,723 |
 
 <details>
@@ -260,11 +254,6 @@ AIG's profit jumped nearly 10x in one year, but the number that tracks the core 
 | 2009 | -12,244 | 27,765 | 18,584 |
 | 2010 | 2,046 | 21,166 | 16,597 |
 | 2011 | 19,810 | 15,225 | -81 |
-| … | … | … | … |
-| 2017 | -6,084 | 6,435 | -7,818 |
-| 2018 | -6 | 6,897 | -394 |
-| … | … | … | … |
-| 2022 | 10,247 | 20,640 | 4,207 |
 
 <details>
 <summary>See all 14 years (the "swinging between profit and loss for the next decade" referenced below)</summary>
