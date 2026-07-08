@@ -11,6 +11,8 @@
 **Tools:** Tableau, Python (pandas)
 **Author:** Kawsar Dilmurat
 
+**Units:** all dollar figures below are **$ millions** unless noted otherwise. Market Cap is in **$ billions** (as labeled in the source dataset). Per-share figures (EPS, Implied Shares Outstanding) are labeled individually.
+
 ---
 
 ## Executive Summary
@@ -24,9 +26,9 @@ Profit margin and revenue growth are the two numbers everyone checks first. This
 | **PG&E** | Cash flow ratio of **-8.17** — looks like freefall | A one-time wildfire liability, booked in 2018–19, paid in cash a year later |
 | **McDonald's** | Negative shareholder equity — looks like distress | A hugely profitable company buying back its own stock faster than it earns |
 | **Sears** | Negative shareholder equity — looks identical to McDonald's | The opposite cause: years of real losses eating through real capital |
-| **AIG** | Net income swung from worst-in-group to best-in-group in 2 years | Tracked investment gains/one-time items, not the insurance business itself |
+| **AIG** | Net income swung from the worst year in the whole dataset to AIG's own best year, in 2 years | The 2011 spike specifically tracked a record year of investing cash flow, not insurance operations |
 
-**The pattern across all four stories: the number alone doesn't tell you what happened. Where the cash came from and where it went does.**
+**The pattern across all four companies: the number alone doesn't tell you what happened. Where the cash came from and where it went does.**
 
 ---
 
@@ -67,16 +69,18 @@ The goal isn't to rank them. It's to show that the same metric — margin, growt
 
 ## Section 2: Growth Trajectories, 2009–2022
 
-**Key point:** the *shape* of a decline matters as much as its size. PG&E's dip is a V; Sears' is a straight line down — same direction, very different story. That difference is the subject of Finding 3.
+**Key point:** revenue and profit don't always move together — PG&E's revenue barely moved through its 2018–2019 crisis even as net income collapsed (see Finding 1). The shape of a revenue trajectory alone can hide as much as it reveals.
 
 <img src="assets/03-revenue-growth-index.png" alt="Revenue Growth Index">
 
-Indexing each company's revenue to its own starting year (2009 = 100) separates four distinct trajectories:
+Indexing each company's revenue to its own starting year (2009 = 100) separates several distinct trajectories:
 
-- **Amazon and Nvidia** — compounding growth, accelerating over time
-- **Apple** — steady, strong growth, no major reversals
-- **McDonald's and AIG** — roughly flat for 14 years
-- **PG&E** — a sharp dip around the 2019 bankruptcy, then recovery
+- **Amazon** — compounding growth, accelerating throughout, ending 21x its 2009 revenue
+- **Nvidia** — real growth overall, but cyclical, not smooth: revenue dipped in 2010, again in 2014, and fell sharply in 2020 (to 319, down from 342 the year before) before rebounding
+- **Apple** — strong growth overall (9x by 2022), with two modest dips (2016, 2019) rather than a straight climb
+- **McDonald's** — roughly flat for 14 years, oscillating between 84 and 124 and ending near its 2009 level
+- **AIG** — a sustained decline, not flat: down to a low of 58 in 2020 before a partial recovery to 75 by 2022
+- **PG&E** — steady, unremarkable growth throughout, including through the 2019 bankruptcy year — revenue never reflects the crisis that shows up in net income (Finding 1)
 - **Sears** — decline in every single year, ending near zero at delisting
 
 ---
@@ -91,7 +95,7 @@ PG&E's account shows one year where it *owed* money (booked on paper, no cash mo
 - On its own, this reads as: *a company burning cash while losing money.*
 - The year-by-year numbers say something different:
 
-| Year | Net Income | Cash Flow from Operating |
+| Year | Net Income ($M) | Cash Flow from Operating ($M) |
 |---|---|---|
 | 2017 | 1,646 | 5,977 |
 | 2018 | -6,851 | 4,752 |
@@ -101,7 +105,7 @@ PG&E's account shows one year where it *owed* money (booked on paper, no cash mo
 <details>
 <summary>See all 14 years (used to compute the -8.17 average)</summary>
 
-| Year | Net Income | Cash Flow from Operating |
+| Year | Net Income ($M) | Cash Flow from Operating ($M) |
 |---|---|---|
 | 2009 | 1,220 | 3,039 |
 | 2010 | 1,099 | 3,206 |
@@ -141,7 +145,7 @@ McDonald's and Sears both show negative shareholder equity on their balance shee
 
 Equity went negative in 2016 and stayed negative through 2022, even as net income stayed solidly profitable across the same years — including a new high in 2021:
 
-| Year | Net Income | Shareholder Equity |
+| Year | Net Income ($M) | Shareholder Equity ($M) |
 |---|---|---|
 | 2013 | 5,586 | 16,010 |
 | 2014 | 4,758 | 12,853 |
@@ -159,7 +163,7 @@ Net income wasn't perfectly smooth — it dipped in 2020 (a pandemic year across
 <details>
 <summary>See all 14 years</summary>
 
-| Year | Net Income | Shareholder Equity |
+| Year | Net Income ($M) | Shareholder Equity ($M) |
 |---|---|---|
 | 2009 | 4,551 | 14,034 |
 | 2010 | 4,946 | 14,634 |
@@ -185,7 +189,7 @@ Net income wasn't perfectly smooth — it dipped in 2020 (a pandemic year across
 
 Equity went negative in 2015 — one year earlier than McDonald's — for the opposite reason. Sears lost money every year from 2013 onward, and those losses ate directly into the capital it had left:
 
-| Year | Net Income | Shareholder Equity |
+| Year | Net Income ($M) | Shareholder Equity ($M) |
 |---|---|---|
 | 2009 | 53 | 9,699 |
 | … | … | … |
@@ -199,7 +203,7 @@ Equity went negative in 2015 — one year earlier than McDonald's — for the op
 <details>
 <summary>See all 10 years (Sears' full lifespan in this dataset)</summary>
 
-| Year | Net Income | Shareholder Equity |
+| Year | Net Income ($M) | Shareholder Equity ($M) |
 |---|---|---|
 | 2009 | 53 | 9,699 |
 | 2010 | 235 | 9,435 |
@@ -220,7 +224,7 @@ Equity went negative in 2015 — one year earlier than McDonald's — for the op
 
 <img src="assets/09-mcd-sears-shares-indexed.png" alt="Implied Shares Outstanding, indexed to 2009=100, McDonald's vs Sears">
 
-- **McDonald's:** share count fell 33% over 14 years — and the pace lines up with the equity collapse. Shares fell fastest (-14.4%, then -11.2%) in 2013–2019, exactly when equity crashed from +16,010 (2013) to -8,210 (2019) — both figures visible in the table above. Once equity leveled off after 2019, share reduction slowed to -3.0%. The timing match is the evidence — not a coincidence of two unrelated numbers moving down at the same time.
+- **McDonald's:** share count fell 33% over 14 years — and the pace lines up with the equity collapse. The decline came in two clustered bursts, not evenly: -14.4% across 2013–2016, then another -11.2% across 2016–2019 — exactly the years equity crashed from +16,010 (2013) to -8,210 (2019) — both figures visible in the table above. Once equity leveled off after 2019, share reduction slowed sharply, down just -3.0% across 2019–2022. The timing match is the evidence — not a coincidence of two unrelated numbers moving down at the same time.
 - **Sears:** share count fell 15% by 2012, then stayed flat — within half a million shares — for the rest of the dataset, while equity collapsed from +9,699 (2009) to -3,723 (2018) — both figures visible in the table above. If Sears' equity had collapsed the way McDonald's did, share count would have kept falling too. It didn't. That confirms the decline came from losses, not from any deliberate return of capital.
 
 **Three metrics failing at once (Sears):**
@@ -239,8 +243,8 @@ Indexed to 2009 = 100, three *independent* measures decline together:
 
 <img src="assets/07-sears-death-spiral.png" alt="Sears Death Spiral">
 
-- The three metrics reinforced each other in a loop: thinner margins → less cash to reinvest in stores/inventory → fewer customers → thinner margins.
-- Inventory and staffing declined fastest (-12.2%/yr), revenue close behind (-10.8%/yr).
+- These three aren't independent. Revenue and gross margin are both about how much money comes in from sales; the current ratio measures how much cash and short-term assets are on hand to cover near-term bills. A company that's selling less (revenue down) at worse margins (gross margin down) is, almost by construction, going to have less cash on hand over time — which is exactly what the current ratio dropping below 1.0 shows. This isn't three unrelated problems; it's one shrinking cash position, visible in three different line items at once.
+- Employee headcount declined fastest (-12.2%/yr), revenue close behind (-10.8%/yr) — Sears cut staff from 291,000 (2009) to 89,900 (2018) while revenue fell from 46,770 to 16,702.
 
 **How this differs from PG&E:** both show a delay between when a number worsens and when it fully shows up elsewhere. At PG&E, the delay was accounting timing — one event, recognized early. At Sears, the delay was a financial cushion being spent down, year after year, with no single event to point to.
 
@@ -254,41 +258,32 @@ AIG's profit jumped nearly 10x in one year, but the number that tracks the core 
 
 <img src="assets/08-aig-ebitda-vs-net-income.png" alt="AIG EBITDA vs Net Income">
 
-| Year | Net Income | EBITDA | Cash Flow from Operating |
-|---|---|---|---|
-| 2009 | -12,244 | 27,765 | 18,584 |
-| 2010 | 2,046 | 21,166 | 16,597 |
-| 2011 | 19,810 | 15,225 | -81 |
+| Year | Net Income ($M) | EBITDA ($M) | Cash Flow from Operating ($M) | Cash Flow from Investing ($M) |
+|---|---|---|---|---|
+| 2009 | -12,244 | 27,765 | 18,584 | 5,778 |
+| 2010 | 2,046 | 21,166 | 16,597 | -9,912 |
+| 2011 | 19,810 | 15,225 | -81 | 36,448 |
+| 2012 | 3,438 | 19,327 | 3,676 | 16,612 |
+| 2013 | 9,085 | 16,922 | 5,865 | 7,099 |
+| 2014 | 7,529 | 16,752 | 5,007 | 14,284 |
+| 2015 | 2,196 | 9,958 | 2,877 | 8,462 |
+| 2016 | -849 | 4,805 | 3,502 | 3,252 |
+| 2017 | -6,084 | 6,435 | -7,818 | 14,041 |
+| 2018 | -6 | 6,897 | -394 | -223 |
+| 2019 | 3,326 | 11,817 | -1,807 | -5,475 |
+| 2020 | -5,973 | 6,821 | 1,038 | -6,202 |
+| 2021 | 9,359 | 15,382 | 6,279 | -3,280 |
+| 2022 | 10,247 | 20,640 | 4,207 | -3,626 |
 
-<details>
-<summary>See all 14 years (net income continuing to swing between profit and loss through 2022)</summary>
-
-| Year | Net Income | EBITDA | Cash Flow from Operating |
-|---|---|---|---|
-| 2009 | -12,244 | 27,765 | 18,584 |
-| 2010 | 2,046 | 21,166 | 16,597 |
-| 2011 | 19,810 | 15,225 | -81 |
-| 2012 | 3,438 | 19,327 | 3,676 |
-| 2013 | 9,085 | 16,922 | 5,865 |
-| 2014 | 7,529 | 16,752 | 5,007 |
-| 2015 | 2,196 | 9,958 | 2,877 |
-| 2016 | -849 | 4,805 | 3,502 |
-| 2017 | -6,084 | 6,435 | -7,818 |
-| 2018 | -6 | 6,897 | -394 |
-| 2019 | 3,326 | 11,817 | -1,807 |
-| 2020 | -5,973 | 6,821 | 1,038 |
-| 2021 | 9,359 | 15,382 | 6,279 |
-| 2022 | 10,247 | 20,640 | 4,207 |
-
-</details>
-
-- AIG went from the **single worst year in this dataset** (-12,244 net income, 2009) to one of the best (+19,810, 2011) in two years. It didn't stabilize after that either — the full 14-year breakdown above shows net income continuing to swing between profit and loss through 2022.
+- AIG went from the **single worst year in this entire 95-row dataset** — any company, any year — (-12,244 net income, 2009) to **its own best year on record** (+19,810, 2011), in just two years. It didn't stabilize after that either — net income kept swinging between profit and loss through 2022.
 - **EBITDA — a rough proxy for how the core business is actually performing — was *lower* in 2011 than the year before** (15,225 vs. 21,166). The underlying business hadn't improved. Yet net income jumped nearly tenfold.
 - **The cash flow number makes the disconnect impossible to miss:** in that same year, AIG's cash flow from operating activities was **-81** — essentially zero. AIG's books showed a $19,810 profit backed by almost no actual cash collected from running the business.
 
-When net income moves opposite to EBITDA, and operating cash flow doesn't move at all, something below the operating line is driving the result: investment gains, reserve releases, one-time charges. For an insurer like AIG, that's exactly where the volatility tends to sit — not in how much insurance it sold, but in how its investment portfolio and legacy liabilities performed in a given year.
+2011 isn't a one-off. Comparing year-over-year changes across the full dataset, net income and EBITDA moved in **opposite directions in 5 of the last 13 years** — including four years in a row, 2010 through 2013, where every single year they disagreed. When two metrics that are supposed to move together instead diverge this often, something outside of EBITDA's scope is regularly driving net income, in both directions.
 
-**Why it matters:** net income assumes a business with one consistent driver. For a company where non-operating items regularly swing larger than operating profit — and where the cash flow statement shows none of the profit actually landing as cash — net income measures something closer to "how the year went" than "how the business is doing."
+2011 is also the only year in the entire dataset where **net income actually exceeds EBITDA** (19,810 vs. 15,225) — since EBITDA adds back interest, taxes, depreciation, and amortization on top of operating profit, net income beating it at all is unusual, and it happens nowhere else in these 14 years. That same year, AIG's Cash Flow from Investing was **36,448** — more than double the next-highest year (16,612, in 2012) and by far the largest investing cash flow in the dataset. The one year net income broke the normal pattern is the same year investing activity spiked to an outlier level. That's a real, checkable link, not a guess.
+
+**Why it matters:** net income assumes a business with one consistent driver. In 2011, both the composition of that year's profit (beating EBITDA, which almost never happens) and a matching spike in investing cash flow point to the same non-operating source. Net income that year measured "how the investing side of the business went," not "how the insurance business is doing."
 
 ---
 
@@ -302,7 +297,7 @@ When net income moves opposite to EBITDA, and operating cash flow doesn't move a
 | Net income deeply negative in a specific year | Not necessarily an operating collapse | Does operating cash flow move the same year, or a year later? |
 | Net income and EBITDA move in opposite directions | Net income isn't tracking the core business | Does operating cash flow confirm which one is closer to reality? |
 | High revenue growth paired with thin margin | Not automatically unhealthy | Is the company reinvesting for scale (Amazon) or simply unable to convert revenue to profit? |
-| Revenue, margin, and liquidity all declining together | A single bad ratio can be a one-off; three moving together usually isn't | Is there a mechanism connecting them (e.g., thinner margins → less cash → underinvestment → fewer customers)? |
+| Revenue, margin, and liquidity all declining together | A single bad ratio can be a one-off; three moving together usually isn't | Are the metrics mechanically connected (e.g., falling revenue and margin directly shrinking the cash a current ratio measures), not just three coincidentally bad numbers? |
 
 **How each company in this report resolved once traced through:**
 
@@ -320,7 +315,6 @@ When net income moves opposite to EBITDA, and operating cash flow doesn't move a
 - **NVDA has 15 years of data (2009–2023)**; every other company here has 14 (2009–2022). Comparisons involving NVDA's most recent year aren't on equal footing with the rest.
 - **Sears (SHLDQ) ends in 2018** — the year before delisting. This is the company's full lifespan in the dataset, not missing data.
 - **PG&E's 2019 Debt/Equity ratio reads as 0.00**, very likely a data artifact of Chapter 11 reclassification (debt becomes "liabilities subject to compromise" during bankruptcy) rather than an actual zero-debt year.
-- **The employee-productivity comparison (Finding 2, early drafts) used each company's full-period average**, not a single shared year, because Sears and PG&E don't share a common "current" year with the rest of the group.
 - **McDonald's implied share count (Net Income ÷ EPS) assumes the dataset's EPS is basic, not diluted.** The two typically differ by a small margin; the 33% decline over 14 years is large enough that this doesn't change the conclusion, but the exact year-by-year figures carry that uncertainty.
 
 ---
