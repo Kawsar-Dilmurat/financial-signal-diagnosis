@@ -94,6 +94,20 @@ PG&E's account shows one year where it *owed* money (booked on paper, no cash mo
 | Year | Net Income | Cash Flow from Operating |
 |---|---|---|
 | 2009 | 1,220 | 3,039 |
+| … | … | … |
+| 2017 | 1,646 | 5,977 |
+| 2018 | -6,851 | 4,752 |
+| 2019 | -7,656 | 4,816 |
+| 2020 | -1,318 | -19,130 |
+| … | … | … |
+| 2022 | 1,800 | 3,721 |
+
+<details>
+<summary>See all 14 years (used to compute the -8.17 average)</summary>
+
+| Year | Net Income | Cash Flow from Operating |
+|---|---|---|
+| 2009 | 1,220 | 3,039 |
 | 2010 | 1,099 | 3,206 |
 | 2011 | 844 | 3,739 |
 | 2012 | 816 | 4,882 |
@@ -107,6 +121,8 @@ PG&E's account shows one year where it *owed* money (booked on paper, no cash mo
 | 2020 | -1,318 | -19,130 |
 | 2021 | -102 | 2,262 |
 | 2022 | 1,800 | 3,721 |
+
+</details>
 
 The -8.17 ratio is the average Cash Flow from Operating ÷ average Net Income across all 14 years above — not a single year's ratio.
 
@@ -132,6 +148,22 @@ Equity went negative in 2016 and stayed there, while net income kept climbing ev
 | Year | Net Income | Shareholder Equity |
 |---|---|---|
 | 2009 | 4,551 | 14,034 |
+| … | … | … |
+| 2013 | 5,586 | 16,010 |
+| 2014 | 4,758 | 12,853 |
+| … | … | … |
+| 2016 | 4,686 | -2,204 |
+| … | … | … |
+| 2019 | 6,025 | -8,210 |
+| … | … | … |
+| 2022 | 6,177 | -6,003 |
+
+<details>
+<summary>See all 14 years</summary>
+
+| Year | Net Income | Shareholder Equity |
+|---|---|---|
+| 2009 | 4,551 | 14,034 |
 | 2010 | 4,946 | 14,634 |
 | 2011 | 5,503 | 14,390 |
 | 2012 | 5,465 | 15,294 |
@@ -146,12 +178,27 @@ Equity went negative in 2016 and stayed there, while net income kept climbing ev
 | 2021 | 7,545 | -4,601 |
 | 2022 | 6,177 | -6,003 |
 
+</details>
+
 - A rising, profitable company shouldn't see its equity collapse.
 - **The dataset has no line item called "buybacks."** So: Net Income ÷ EPS backs out the implied share count for each year.
 
 **Sears — the opposite mechanism:**
 
 Equity went negative in 2015 — one year earlier than McDonald's — for the opposite reason. Sears lost money every year from 2013 onward, and those losses ate directly into the capital it had left:
+
+| Year | Net Income | Shareholder Equity |
+|---|---|---|
+| 2009 | 53 | 9,699 |
+| … | … | … |
+| 2013 | -930 | 3,172 |
+| … | … | … |
+| 2015 | -1,682 | -945 |
+| … | … | … |
+| 2018 | -383 | -3,723 |
+
+<details>
+<summary>See all 10 years (Sears' full lifespan in this dataset)</summary>
 
 | Year | Net Income | Shareholder Equity |
 |---|---|---|
@@ -165,6 +212,8 @@ Equity went negative in 2015 — one year earlier than McDonald's — for the op
 | 2016 | -1,129 | -1,956 |
 | 2017 | -2,221 | -3,824 |
 | 2018 | -383 | -3,723 |
+
+</details>
 
 **One company had money to spare and retired its own stock. The other ran out of money it needed.**
 
@@ -211,6 +260,20 @@ AIG's profit jumped nearly 10x in one year, but the number that tracks the core 
 | 2009 | -12,244 | 27,765 | 18,584 |
 | 2010 | 2,046 | 21,166 | 16,597 |
 | 2011 | 19,810 | 15,225 | -81 |
+| … | … | … | … |
+| 2017 | -6,084 | 6,435 | -7,818 |
+| 2018 | -6 | 6,897 | -394 |
+| … | … | … | … |
+| 2022 | 10,247 | 20,640 | 4,207 |
+
+<details>
+<summary>See all 14 years (the "swinging between profit and loss for the next decade" referenced below)</summary>
+
+| Year | Net Income | EBITDA | Cash Flow from Operating |
+|---|---|---|---|
+| 2009 | -12,244 | 27,765 | 18,584 |
+| 2010 | 2,046 | 21,166 | 16,597 |
+| 2011 | 19,810 | 15,225 | -81 |
 | 2012 | 3,438 | 19,327 | 3,676 |
 | 2013 | 9,085 | 16,922 | 5,865 |
 | 2014 | 7,529 | 16,752 | 5,007 |
@@ -222,6 +285,8 @@ AIG's profit jumped nearly 10x in one year, but the number that tracks the core 
 | 2020 | -5,973 | 6,821 | 1,038 |
 | 2021 | 9,359 | 15,382 | 6,279 |
 | 2022 | 10,247 | 20,640 | 4,207 |
+
+</details>
 
 - AIG went from the **single worst year in this dataset** (-12,244 net income, 2009) to one of the best (+19,810, 2011) in two years. It never fully settled after that, swinging between profit and loss for the next decade.
 - **EBITDA — a rough proxy for how the core business is actually performing — was *lower* in 2011 than the year before** (15,225 vs. 21,166). The underlying business hadn't improved. Yet net income jumped nearly tenfold.
