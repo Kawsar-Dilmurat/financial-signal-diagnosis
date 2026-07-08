@@ -1,6 +1,7 @@
 # Reading Between the Numbers: A 14-Year Financial Analysis of 7 Companies
 
 > **TL;DR:**
+> - A multi-year average can hide wild swings — two companies can rank near each other on average margin while one stayed rock-steady and the other swung from losses to record highs.
 > - A ratio built from an average can hide two unrelated events that happened in different years.
 > - Negative shareholder equity can mean "the company is failing" **or** "the company is so profitable it's buying back its own stock." Same balance-sheet signal, opposite cause — and the same test (implied share count) can prove which one it is, for both companies at once.
 > - Three independent metrics declining together is a much stronger signal than any single bad number.
@@ -19,16 +20,17 @@
 
 Profit margin and revenue growth are the two numbers everyone checks first. This report shows why they aren't enough.
 
-**Three findings, one shared pattern:**
+**Four findings, one shared pattern:**
 
 | Company | The number that looks bad/good | What it actually was |
 |---|---|---|
+| **All 7 companies** | Section 1's margin ranking — a single 14-year average per company | Two companies (PG&E, AIG) have averages built from wild year-to-year swings — the average barely describes any actual year |
 | **PG&E** | Cash flow ratio of **-8.17** — looks like freefall | A one-time wildfire liability, booked in 2018–19, paid in cash a year later |
 | **McDonald's** | Negative shareholder equity — looks like distress | A hugely profitable company buying back its own stock faster than it earns |
 | **Sears** | Negative shareholder equity — looks identical to McDonald's | The opposite cause: years of real losses eating through real capital |
 | **AIG** | Net income swung from the worst year in the whole dataset to AIG's own best year, in 2 years | The 2011 spike specifically tracked a record year of investing cash flow, not insurance operations |
 
-**The pattern across all four companies: the number alone doesn't tell you what happened. Where the cash came from and where it went does.**
+**The pattern across all four findings: the number alone doesn't tell you what happened. Where the cash came from and where it went does — and before trusting any single number, it's worth checking what's hiding behind it.**
 
 ---
 
@@ -69,7 +71,7 @@ The goal isn't to rank them. It's to show that the same metric — margin, growt
 
 ## Section 2: Growth Trajectories, 2009–2022
 
-**Key point:** revenue and profit don't always move together — PG&E's revenue barely moved through its 2018–2019 crisis even as net income collapsed (see Finding 1). The shape of a revenue trajectory alone can hide as much as it reveals.
+**Key point:** revenue and profit don't always move together — PG&E's revenue barely moved through its 2018–2019 crisis even as net income collapsed (see Finding 2). The shape of a revenue trajectory alone can hide as much as it reveals.
 
 <img src="assets/03-revenue-growth-index.png" alt="Revenue Growth Index">
 
@@ -80,12 +82,32 @@ Indexing each company's revenue to its own starting year (2009 = 100) separates 
 - **Apple** — strong growth overall (9x by 2022), with two modest dips (2016, 2019) rather than a straight climb
 - **McDonald's** — roughly flat for 14 years, oscillating between 84 and 124 and ending near its 2009 level
 - **AIG** — a sustained decline, not flat: down to a low of 58 in 2020 before a partial recovery to 75 by 2022
-- **PG&E** — steady, unremarkable growth throughout, including through the 2019 bankruptcy year — revenue never reflects the crisis that shows up in net income (Finding 1)
+- **PG&E** — steady, unremarkable growth throughout, including through the 2019 bankruptcy year — revenue never reflects the crisis that shows up in net income (Finding 2)
 - **Sears** — decline in every single year, ending near zero at delisting
 
 ---
 
-## Finding 1: PG&E — When a Bad Number Isn't What It Looks Like
+## Finding 1: The Average Doesn't Tell You If the Ride Was Smooth
+
+Section 1's ranking chart puts Apple at 22.5% average margin and Nvidia at 17.5% — both comfortably in the "good margin" tier, a few spots apart on the same bar chart. Read that way, they look like similar performers.
+
+They aren't. **The chart below exists to make that gap concrete**, using the single clearest pair in the dataset: the same 14 years, plotted year by year instead of averaged into one number.
+
+<img src="assets/11-aapl-nvda-margin.png" alt="Apple vs Nvidia margin, year by year">
+
+Apple's margin stayed inside a tight range for 14 years — from a low of 19.2% to a high of 26.7%, a gap of about 7.5 percentage points total. Nvidia spent two years in loss territory (-0.9%, -2.0%), then climbed as high as 36.2% — a swing of nearly 40 percentage points across the same period. The standard deviation makes the gap explicit: **2.2 for Apple, 11.9 for Nvidia** — more than five times the spread, hidden behind two averages that sit seven points apart on the same bar chart.
+
+**This one pair proves the concept. The next chart checks whether it holds for the whole group** — not just Apple and Nvidia, but all seven companies from Section 1's original ranking, to see which of those rankings are built on a stable number and which are built on a number that swings wildly from year to year:
+
+<img src="assets/12-margin-range-all-companies.png" alt="Average margin and full range for all 7 companies, sorted by volatility">
+
+PG&E and AIG aren't just negative or low on average — they're the two most volatile margins in the entire group, by a wide margin over even Nvidia's swings. An average built from numbers that swing this hard isn't describing a typical year. It's describing no year in particular.
+
+**Why it matters:** a single average, ranked against six other averages, treats "consistently decent" and "wildly unpredictable" as the same kind of number if they happen to land near the same value. They're not the same kind of number. Before trusting any ranking built on a multi-year average — including the one at the top of this report — the spread behind that average is the first thing worth checking, not the last.
+
+---
+
+## Finding 2: PG&E — When a Bad Number Isn't What It Looks Like
 
 PG&E's account shows one year where it *owed* money (booked on paper, no cash moved) and a separate year where it *paid* that money (cash actually left). Averaged into one ratio, two different events look like one ongoing crisis.
 
@@ -133,7 +155,7 @@ The -8.17 ratio is the average Cash Flow from Operating ÷ average Net Income ac
 
 ---
 
-## Finding 2: McDonald's vs. Sears — Same Signal, Opposite Cause
+## Finding 3: McDonald's vs. Sears — Same Signal, Opposite Cause
 
 Both companies' equity went negative. One went negative because it's *so profitable* it keeps buying back its own stock. The other went negative because it kept *losing money* until there was nothing left — and the same math that proves the first story also rules it out for the second.
 
@@ -252,7 +274,7 @@ Indexed to 2009 = 100, three *independent* measures decline together:
 
 ---
 
-## Finding 3: AIG — Profit Swings the Business Didn't Cause
+## Finding 4: AIG — Profit Swings the Business Didn't Cause
 
 AIG's profit jumped nearly 10x in one year, but the number that tracks the core insurance business went *down* that same year — and almost none of the "profit" showed up as real cash.
 
@@ -293,20 +315,21 @@ AIG's profit jumped nearly 10x in one year, but the number that tracks the core 
 
 | Signal | Don't conclude immediately | Check next |
 |---|---|---|
+| A company's average metric ranks it well (or poorly) against peers | The average alone doesn't say if it's a stable number or a swing-driven one | What's the spread (range or standard deviation) across the individual years behind that average? |
 | Negative shareholder equity | Not automatically distress | Is net income rising or falling? Is implied share count falling (buybacks) or flat (losses eating capital)? |
 | Net income deeply negative in a specific year | Not necessarily an operating collapse | Does operating cash flow move the same year, or a year later? |
 | Net income and EBITDA move in opposite directions | Net income isn't tracking the core business | Does operating cash flow confirm which one is closer to reality? |
 | High revenue growth paired with thin margin | Not automatically unhealthy | Is the company reinvesting for scale (Amazon) or simply unable to convert revenue to profit? |
 | Revenue, margin, and liquidity all declining together | A single bad ratio can be a one-off; three moving together usually isn't | Are the metrics mechanically connected (e.g., falling revenue and margin directly shrinking the cash a current ratio measures), not just three coincidentally bad numbers? |
 
-**How each company in this report resolved once traced through:**
+**How each of the four companies investigated in depth resolved once traced through:**
 
 - **PG&E** — cash was consumed by a liability it didn't choose (wildfire settlement), recognized on paper a year before it hit cash.
 - **Sears** — cash was never there to begin with; losses ate through it every year from 2012 onward, with no single event to point to.
 - **McDonald's** — cash was returned to shareholders by choice, fast enough to run equity negative despite rising profit.
 - **AIG** — the profit itself wasn't backed by cash in the first place; a $19,810 gain in 2011 came with operating cash flow of -81.
 
-**Four different mechanisms, one shared lesson: the metric is a starting point for a question, not an answer by itself.**
+**Four companies, four different mechanisms, one shared lesson: the metric is a starting point for a question, not an answer by itself.**
 
 ---
 
