@@ -93,12 +93,22 @@ PG&E's account shows one year where it *owed* money (booked on paper, no cash mo
 
 | Year | Net Income | Cash Flow from Operating |
 |---|---|---|
+| 2009 | 1,220 | 3,039 |
+| 2010 | 1,099 | 3,206 |
+| 2011 | 844 | 3,739 |
+| 2012 | 816 | 4,882 |
+| 2013 | 814 | 3,427 |
+| 2014 | 1,436 | 3,690 |
+| 2015 | 874 | 3,780 |
+| 2016 | 1,393 | 4,409 |
 | 2017 | 1,646 | 5,977 |
 | 2018 | -6,851 | 4,752 |
 | 2019 | -7,656 | 4,816 |
 | 2020 | -1,318 | -19,130 |
 | 2021 | -102 | 2,262 |
 | 2022 | 1,800 | 3,721 |
+
+The -8.17 ratio is the average Cash Flow from Operating ÷ average Net Income across all 14 years above — not a single year's ratio.
 
 - **2018–2019:** net income collapsed because PG&E recognized a wildfire liability on paper — an accounting entry, not a cash outflow. Operating cash flow barely moved.
 - **2020:** the cash actually went out the door (operating cash flow fell to -19,130) — by which point net income had already started to recover.
@@ -121,9 +131,19 @@ Equity went negative in 2016 and stayed there, while net income kept climbing ev
 
 | Year | Net Income | Shareholder Equity |
 |---|---|---|
+| 2009 | 4,551 | 14,034 |
+| 2010 | 4,946 | 14,634 |
+| 2011 | 5,503 | 14,390 |
+| 2012 | 5,465 | 15,294 |
+| 2013 | 5,586 | 16,010 |
 | 2014 | 4,758 | 12,853 |
-| 2016 | 4,687 | -2,204 |
+| 2015 | 4,529 | 7,088 |
+| 2016 | 4,686 | -2,204 |
+| 2017 | 5,192 | -3,268 |
 | 2018 | 5,924 | -6,258 |
+| 2019 | 6,025 | -8,210 |
+| 2020 | 4,730 | -7,825 |
+| 2021 | 7,545 | -4,601 |
 | 2022 | 6,177 | -6,003 |
 
 - A rising, profitable company shouldn't see its equity collapse.
@@ -135,8 +155,14 @@ Equity went negative in 2015 — one year earlier than McDonald's — for the op
 
 | Year | Net Income | Shareholder Equity |
 |---|---|---|
+| 2009 | 53 | 9,699 |
+| 2010 | 235 | 9,435 |
+| 2011 | 133 | 8,614 |
+| 2012 | -3,140 | 4,341 |
 | 2013 | -930 | 3,172 |
+| 2014 | -1,365 | 2,183 |
 | 2015 | -1,682 | -945 |
+| 2016 | -1,129 | -1,956 |
 | 2017 | -2,221 | -3,824 |
 | 2018 | -383 | -3,723 |
 
@@ -146,9 +172,8 @@ Equity went negative in 2015 — one year earlier than McDonald's — for the op
 
 <img src="assets/09-mcd-sears-shares-indexed.png" alt="Implied Shares Outstanding, indexed to 2009=100, McDonald's vs Sears">
 
-- **McDonald's:** share count fell 33% over 14 years — and the pace lines up with the equity collapse. Shares fell fastest (-14.4%, then -11.2%) in 2013–2019, exactly when equity crashed from +16,010 to -8,210. Once equity leveled off after 2019, share reduction slowed to -3.0%. The timing match is the evidence — not a coincidence of two unrelated numbers moving down at the same time.
-- **Sears:** share count fell 15% by 2012, then stayed flat — within half a million shares — for the rest of the dataset, while equity kept falling from +9,699 to -3,723. If Sears' equity had collapsed the way McDonald's did, share count would have kept falling too. It didn't. That confirms the decline came from losses, not from any deliberate return of capital.
-- Apple shows the same mechanism as McDonald's, earlier in its lifecycle: shareholder equity fell from 134,047 (2017) to 50,672 (2022) while net income hit an all-time high. Same direction, different stage.
+- **McDonald's:** share count fell 33% over 14 years — and the pace lines up with the equity collapse. Shares fell fastest (-14.4%, then -11.2%) in 2013–2019, exactly when equity crashed from +16,010 (2013) to -8,210 (2019) — both figures visible in the table above. Once equity leveled off after 2019, share reduction slowed to -3.0%. The timing match is the evidence — not a coincidence of two unrelated numbers moving down at the same time.
+- **Sears:** share count fell 15% by 2012, then stayed flat — within half a million shares — for the rest of the dataset, while equity kept falling from +9,699 (2009) to -3,723 (2018) — both figures visible in the table above. If Sears' equity had collapsed the way McDonald's did, share count would have kept falling too. It didn't. That confirms the decline came from losses, not from any deliberate return of capital.
 
 **Three metrics failing at once (Sears):**
 
@@ -180,6 +205,23 @@ Indexed to 2009 = 100, three *independent* measures decline together:
 AIG's profit jumped nearly 10x in one year, but the number that tracks the core insurance business went *down* that same year — and almost none of the "profit" showed up as real cash.
 
 <img src="assets/08-aig-ebitda-vs-net-income.png" alt="AIG EBITDA vs Net Income">
+
+| Year | Net Income | EBITDA | Cash Flow from Operating |
+|---|---|---|---|
+| 2009 | -12,244 | 27,765 | 18,584 |
+| 2010 | 2,046 | 21,166 | 16,597 |
+| 2011 | 19,810 | 15,225 | -81 |
+| 2012 | 3,438 | 19,327 | 3,676 |
+| 2013 | 9,085 | 16,922 | 5,865 |
+| 2014 | 7,529 | 16,752 | 5,007 |
+| 2015 | 2,196 | 9,958 | 2,877 |
+| 2016 | -849 | 4,805 | 3,502 |
+| 2017 | -6,084 | 6,435 | -7,818 |
+| 2018 | -6 | 6,897 | -394 |
+| 2019 | 3,326 | 11,817 | -1,807 |
+| 2020 | -5,973 | 6,821 | 1,038 |
+| 2021 | 9,359 | 15,382 | 6,279 |
+| 2022 | 10,247 | 20,640 | 4,207 |
 
 - AIG went from the **single worst year in this dataset** (-12,244 net income, 2009) to one of the best (+19,810, 2011) in two years. It never fully settled after that, swinging between profit and loss for the next decade.
 - **EBITDA — a rough proxy for how the core business is actually performing — was *lower* in 2011 than the year before** (15,225 vs. 21,166). The underlying business hadn't improved. Yet net income jumped nearly tenfold.
